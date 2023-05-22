@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CoTracker: It is Better to Track Together">
+  <meta name="keywords" content="CoTracker">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoTracker: It is Better to Track Together</title>
+
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 style="font-size: 43px" class="title is-1 publication-title">CoTracker: It is Better to Track Together
+            </h1>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Methods for video motion prediction either estimate jointly the instantaneous motion
+              of all points in a given video frame using optical flow, or track the motion of individual points
+              throughout the video, but independently.
+              The latter is true even for powerful deep learning methods that can track points through occlusions.
+              Tracking points individually ignores the strong correlation that can exist between the points, for
+              instance when they arise from the same physical object, potentially harming performance.
+            </p>
+            <p>
+              In this paper, we thus propose CoTracker, an architecture that jointly tracks multiple points throughout
+              an entire video.
+              This architecture is based on several ideas from the optical flow and tracking literature, and combines
+              them in a new,
+              flexible and powerful design. It is based on a transformer network that models the correlation of
+              different points in time via specialised attention layers.
+            </p>
+            <p></p>
+            The transformer is designed to update iteratively an estimate of several trajectories.
+            It can be applied in a sliding-window manner to very long videos, for which we engineer an unrolled training
+            loop.
+            It compares favourably against state-of-the-art point tracking methods, both in terms of efficiency and
+            accuracy.
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <!-- <div class="content has-text-centered"> -->
+        <!-- <div class="column is-four-fifths"> -->
+
+        <div class="publication-video">
+          <h2 class="title is-4">Points on a uniform grid</h2>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding-right:1%;width:32%;vertical-align:middle">
+                  <div align="center">PIPs</div>
+                </td>
+                <td style="padding-right:1%;width:32%;vertical-align:middle">
+                  <div align="center">RAFT</div>
+                </td>
+                <td style="padding-right:1%;width:32%;vertical-align:middle">
+                  <div align="center"> CoTracker (ours)</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr style="padding:0px">
+                <td style="width:100%;vertical-align:middle">
+                  <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
+                    muted="true">
+                    <source src="./videos/davis_car.mp4" type="video/mp4">Sorry, your browser doesn't support embedded
+                    videos.
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr style="padding:0px">
+                <td style="width:100%;vertical-align:middle">
+                  <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
+                    muted="true">
+                    <source src="./videos/davis_soapbox.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    embedded
+                    videos.
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr style="padding:0px">
+                <td style="width:100%;vertical-align:middle">
+                  <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
+                    muted="true">
+                    <source src="./videos/davis_libby.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    embedded
+                    videos.
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="publication-video">
+          <h2 class="title is-4">Individual points</h2>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
