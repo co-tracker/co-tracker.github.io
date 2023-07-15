@@ -23,8 +23,6 @@
 </head>
 
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -32,14 +30,138 @@
           <div class="column has-text-centered">
             <h1 style="font-size: 43px" class="title is-1 publication-title">CoTracker: It is Better to Track Together
             </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://nikitakaraevv.github.io/">Nikita Karaev</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.irocco.info/">Ignacio Rocco</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://ai.facebook.com/people/benjamin-graham/">Benjamin Graham</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://nneverova.github.io/">Natalia Neverova</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://chrirupp.github.io/">Christian Rupprecht</a><sup>2</sup>
+              </span>
+            </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Meta AI</span>
+              <span class="author-block"><sup>2</sup>Visual Geometry Group, University of Oxford</span>
+            </div>
 
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/facebookresearch/co-tracker"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- </section> -->
+
+  <section class="hero is-light is-small">
+
+    <div class="hero-body">
+      <div class="container" id="container-carousel 1">
+        <div id="results-carousel 1" class="carousel results-carousel">
+
+
+          <div class="item item-paragliding-launch">
+            <video style="width: 637px;" poster="" id="paragliding-launch" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="./videos/teaser/paragliding-launch.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-bmx-bumps">
+            <video style="width: 637px;" poster="" id="bmx-bumps" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="./videos/teaser/bmx-bumps.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-horsejump-high">
+            <video style="width: 637px;" poster="" id="horsejump-high" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="./videos/teaser/horsejump-high.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-motocross-bump">
+            <video style="width: 637px;" poster="" id="motocross-bump" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="./videos/teaser/motocross-bumps.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-paragliding">
+            <video style="width: 637px;" poster="" id="paragliding" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="./videos/teaser/paragliding.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-parkour">
+            <video style="width: 637px;" poster="" id="parkour" autoplay controls muted loop playsinline height="100%">
+              <source src="./videos/teaser/parkour.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-soapbox">
+            <video style="width: 637px;" poster="" id="soapbox" autoplay controls muted loop playsinline height="100%">
+              <source src="./videos/teaser/soapbox.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-surf">
+            <video style="width: 637px;" poster="" id="surf" autoplay controls muted loop playsinline height="100%">
+              <source src="./videos/teaser/surf.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-rollerblade">
+            <video style="width: 637px;" poster="" id="rollerblade" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="./videos/teaser/rollerblade.mp4" type="video/mp4">
+            </video>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section">
@@ -67,7 +189,8 @@
             </p>
             <p></p>
             The transformer is designed to update iteratively an estimate of several trajectories.
-            It can be applied in a sliding-window manner to very long videos, for which we engineer an unrolled training
+            It can be applied in a sliding-window manner to very long videos, for which we engineer an unrolled
+            training
             loop.
             It compares favourably against state-of-the-art point tracking methods, both in terms of efficiency and
             accuracy.
@@ -85,17 +208,24 @@
 
         <div class="publication-video">
           <h2 class="title is-4">Points on a uniform grid</h2>
+          <p>We track points sampled on a regular grid starting from the initial video frame.
+            The colors represent the object (magenta) and the background (cyan).</p>
+
+
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr style="padding:0px">
-                <td style="padding-right:1%;width:32%;vertical-align:middle">
+                <td style="padding-right:1%;width:25%;vertical-align:middle">
                   <div align="center">PIPs</div>
                 </td>
-                <td style="padding-right:1%;width:32%;vertical-align:middle">
+                <td style="padding-right:1%;width:25%;vertical-align:middle">
                   <div align="center">RAFT</div>
                 </td>
-                <td style="padding-right:1%;width:32%;vertical-align:middle">
+                <td style="padding-right:1%;width:25%;vertical-align:middle">
+                  <div align="center">TAPIR</div>
+                </td>
+                <td style="padding-right:1%;width:25%;vertical-align:middle">
                   <div align="center"> CoTracker (Ours)</div>
                 </td>
               </tr>
@@ -107,20 +237,7 @@
                 <td style="width:100%;vertical-align:middle">
                   <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
                     muted="true">
-                    <source src="./videos/davis_car.mp4" type="video/mp4">Sorry, your browser doesn't support embedded
-                    videos.
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <tbody>
-              <tr style="padding:0px">
-                <td style="width:100%;vertical-align:middle">
-                  <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
-                    muted="true">
-                    <source src="./videos/davis_soapbox.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    <source src="./videos/grid/davis_car.mp4" type="video/mp4">Sorry, your browser doesn't support
                     embedded
                     videos.
                   </video>
@@ -134,7 +251,7 @@
                 <td style="width:100%;vertical-align:middle">
                   <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
                     muted="true">
-                    <source src="./videos/davis_libby.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    <source src="./videos/grid/davis_soapbox.mp4" type="video/mp4">Sorry, your browser doesn't support
                     embedded
                     videos.
                   </video>
@@ -142,12 +259,53 @@
               </tr>
             </tbody>
           </table>
+          <table>
+            <tbody>
+              <tr style="padding:0px">
+                <td style="width:100%;vertical-align:middle">
+                  <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
+                    muted="true">
+                    <source src="./videos/grid/davis_libby.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    embedded
+                    videos.
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            For PIPs, many points are incorrectly tracked and end up being ’stuck’ on the front of the object or the
+            side
+            of the image
+            when they become occluded. RAFT predictions have less noise, but the model fails to handle occlusions,
+            leading to points being lost or stuck on the object.
+            TAPIR predictions are pretty accurate for non-occluded points. When a point becomes occluded, the
+            model struggles to estimate its position. CoTracker produces cleaner
+            and more ’linear’ tracks, which is accurate as the primary motion is a homography (the observer does not
+            translate).
+          </p>
+          <!-- <div class="content has-text-justified">
+            <p>
+              </p>
+              Methods for video motion prediction either estimate jointly the instantaneous motion
+              of all points in a given video frame using optical flow, or track the motion of individual points
+              throughout the video, but independently.
+              The latter is true even for powerful deep learning methods that can track points through occlusions.
+              Tracking points individually ignores the strong correlation that can exist between the points, for
+              instance when they arise from the same physical object, potentially harming performance.
+            </p>
+          </div> -->
 
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
         <div class="publication-video">
           <h2 class="title is-4">Individual points</h2>
+          <p>
+            We track the same queried point with different methods and visualize its trajectory
+            using color encoding based on time.
+            The red cross (❌) indicates the ground truth point coordinates.
+          </p>
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -173,7 +331,8 @@
                 <td style="width:100%;vertical-align:middle">
                   <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
                     muted="true">
-                    <source src="./videos/bike_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    <source src="./videos/individual/bike_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't
+                    support
                     embedded
                     videos.
                   </video>
@@ -187,7 +346,8 @@
                 <td style="width:100%;vertical-align:middle">
                   <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
                     muted="true">
-                    <source src="./videos/skate_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    <source src="./videos/individual/skate_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't
+                    support
                     embedded
                     videos.
                   </video>
@@ -201,7 +361,8 @@
                 <td style="width:100%;vertical-align:middle">
                   <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
                     muted="true">
-                    <source src="./videos/jump_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    <source src="./videos/individual/jump_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't
+                    support
                     embedded
                     videos.
                   </video>
@@ -215,7 +376,9 @@
                 <td style="width:100%;vertical-align:middle">
                   <video controls="" style="width:100%;max-width:100%" autoplay="true" loop="true" playsinline="true"
                     muted="true">
-                    <source src="./videos/mountains_grayscale.mp4" type="video/mp4">Sorry, your browser doesn't support
+                    <source src="./videos/individual/mountains_grayscale.mp4" type="video/mp4">Sorry, your browser
+                    doesn't
+                    support
                     embedded
                     videos.
                   </video>
@@ -230,6 +393,68 @@
 
     </div>
 
+    <section class="section" id="related">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Related Links</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                Several concurrent works have been developed roughly at the same time as our work:
+              </p>
+              <p>
+                <a href="https://deepmind-tapir.github.io/">TAPIR</a> is a feed-forward point tracker with a matching
+                stage
+                inspired by <a href="https://arxiv.org/abs/2211.03726">TAP-Vid</a> and a refinement stage inspired by <a
+                  href="https://particle-video-revisited.github.io/">PIPs</a>. The model
+                demonstrates accurate tracking
+                for visible points.
+                However, it struggles to predict the positions of occluded points.
+              </p>
+              <p>
+                <a href="https://omnimotion.github.io/">Tracking Everything Everywhere All At Once</a> optimizes a
+                volumetric representation for each video during test-time, refining
+                estimated correspondences in a canonical space. The model is currently based on RAFT tracks and is less
+                accurate than CoTracker, but it potentially can be used to refine CoTracker tracks
+              </p>
+              <p>
+                <a href="https://arxiv.org/abs/2305.12998">Multi-Flow Tracking</a> conducts optical flow estimation
+                between distant frames and chooses the most reliable chain of optical flows
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre>
+<code>
+</code>
+</pre>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This webpage template is adapted from <a href="https://dynamic-stereo.github.io/">DynamicStereo</a>,
+                under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
 
 
 

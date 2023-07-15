@@ -45,19 +45,6 @@ $(document).ready(function () {
 
 
 })
-$(document).ready(function () {
-  console.log('document', document)
-
-
-
-  function showDataLink() {
-    acceptButton.style.display = "none";
-    revealDatalink.style.display = "block";
-    // acceptButton.parentNode.replaceChild(divlink, acceptButton);
-  }
-
-  acceptButton.addEventListener('click', showDataLink);
-})
 
 document.addEventListener('DOMContentLoaded', () => {
   // Functions to open and close a modal
