@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF7Z0V0V2H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BF7Z0V0V2H');
+  </script>
   <meta charset="utf-8">
   <meta name="description" content="CoTracker: It is Better to Track Together">
   <meta name="keywords" content="CoTracker">
@@ -58,19 +67,11 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2307.07635" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
                   </a>
                 </span>
                 <!-- Code Link. -->
@@ -101,56 +102,51 @@
 
 
           <div class="item item-paragliding-launch">
-            <video style="width: 637px;" poster="" id="paragliding-launch" autoplay controls muted loop playsinline
+            <video style="width: 637px;" poster="" id="paragliding-launch" autoplay muted loop playsinline
               height="100%">
               <source src="./videos/teaser/paragliding-launch.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-bmx-bumps">
-            <video style="width: 637px;" poster="" id="bmx-bumps" autoplay controls muted loop playsinline
-              height="100%">
+            <video style="width: 637px;" poster="" id="bmx-bumps" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/bmx-bumps.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-horsejump-high">
-            <video style="width: 637px;" poster="" id="horsejump-high" autoplay controls muted loop playsinline
-              height="100%">
+            <video style="width: 637px;" poster="" id="horsejump-high" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/horsejump-high.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="item item-motocross-bump">
-            <video style="width: 637px;" poster="" id="motocross-bump" autoplay controls muted loop playsinline
-              height="100%">
+            <video style="width: 637px;" poster="" id="motocross-bump" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/motocross-bumps.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-paragliding">
-            <video style="width: 637px;" poster="" id="paragliding" autoplay controls muted loop playsinline
-              height="100%">
+            <video style="width: 637px;" poster="" id="paragliding" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/paragliding.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="item item-parkour">
-            <video style="width: 637px;" poster="" id="parkour" autoplay controls muted loop playsinline height="100%">
+            <video style="width: 637px;" poster="" id="parkour" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/parkour.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="item item-soapbox">
-            <video style="width: 637px;" poster="" id="soapbox" autoplay controls muted loop playsinline height="100%">
+            <video style="width: 637px;" poster="" id="soapbox" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/soapbox.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-surf">
-            <video style="width: 637px;" poster="" id="surf" autoplay controls muted loop playsinline height="100%">
+            <video style="width: 637px;" poster="" id="surf" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/surf.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-rollerblade">
-            <video style="width: 637px;" poster="" id="rollerblade" autoplay controls muted loop playsinline
-              height="100%">
+            <video style="width: 637px;" poster="" id="rollerblade" autoplay muted loop playsinline height="100%">
               <source src="./videos/teaser/rollerblade.mp4" type="video/mp4">
             </video>
           </div>
@@ -207,10 +203,11 @@
         <!-- <div class="column is-four-fifths"> -->
 
         <div class="publication-video">
-          <h2 class="title is-4">Points on a uniform grid</h2>
-          <p>We track points sampled on a regular grid starting from the initial video frame.
-            The colors represent the object (magenta) and the background (cyan).</p>
-
+          <h2 class="title is-3">Points on a uniform grid</h2>
+          <div class="content has-text-justified">
+            <p>We track points sampled on a regular grid starting from the initial video frame.
+              The colors represent the object (magenta) and the background (cyan).</p>
+          </div>
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -273,17 +270,19 @@
               </tr>
             </tbody>
           </table>
-          <p>
-            For PIPs, many points are incorrectly tracked and end up being ’stuck’ on the front of the object or the
-            side
-            of the image
-            when they become occluded. RAFT predictions have less noise, but the model fails to handle occlusions,
-            leading to points being lost or stuck on the object.
-            TAPIR predictions are pretty accurate for non-occluded points. When a point becomes occluded, the
-            model struggles to estimate its position. CoTracker produces cleaner
-            and more ’linear’ tracks, which is accurate as the primary motion is a homography (the observer does not
-            translate).
-          </p>
+          <div class="content has-text-justified">
+            <p>
+              For PIPs, many points are incorrectly tracked and end up being ’stuck’ on the front of the object or the
+              side
+              of the image
+              when they become occluded. RAFT predictions have less noise, but the model fails to handle occlusions,
+              leading to points being lost or stuck on the object.
+              TAPIR predictions are pretty accurate for non-occluded points. When a point becomes occluded, the
+              model struggles to estimate its position. CoTracker produces cleaner
+              and more ’linear’ tracks, which is accurate as the primary motion is a homography (the observer does not
+              translate).
+            </p>
+          </div>
           <!-- <div class="content has-text-justified">
             <p>
               </p>
@@ -300,12 +299,14 @@
       </div>
       <div class="columns is-centered has-text-centered">
         <div class="publication-video">
-          <h2 class="title is-4">Individual points</h2>
-          <p>
-            We track the same queried point with different methods and visualize its trajectory
-            using color encoding based on time.
-            The red cross (❌) indicates the ground truth point coordinates.
-          </p>
+          <h2 class="title is-3">Individual points</h2>
+          <div class="content has-text-justified">
+            <p>
+              We track the same queried point with different methods and visualize its trajectory
+              using color encoding based on time.
+              The red cross (❌) indicates the ground truth point coordinates.
+            </p>
+          </div>
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -432,10 +433,12 @@
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre>
-<code>
-</code>
-</pre>
+        <pre><code>@InProceedings{karaev2023cotracker,
+      author    = {Nikita Karaev and Ignacio Rocco and Benjamin Graham and Natalia Neverova and Andrea Vedaldi and Christian Rupprecht},
+      title     = {{CoTracker}: It is Better to Track Together},
+      journal   = {arxiv},
+      year      = {2023}
+    }</code></pre>
       </div>
     </section>
 
@@ -455,6 +458,7 @@
       </div>
     </footer>
     </div>
+
 
 
 
